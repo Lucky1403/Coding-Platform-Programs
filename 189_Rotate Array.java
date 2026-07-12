@@ -10,7 +10,7 @@ class Solution {
     {
         while(i < j)
         {
-            swap(arr, i,j);
+            swap(arr, i, j);
             i++;
             j--;
         }
