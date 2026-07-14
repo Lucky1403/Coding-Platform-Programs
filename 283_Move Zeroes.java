@@ -3,7 +3,7 @@ class Solution {
     {
         int temporaryVariable = arr[i];
         arr[i] = arr[j];
-        arr[j] = temporaryVariable
+        arr[j] = temporaryVariable;
     }
 
     public void moveZeroes(int[] nums) {
