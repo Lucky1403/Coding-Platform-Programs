@@ -39,7 +39,7 @@ class Solution {
         }
         
         for(char key : map.keySet()){
-            if(map.get(key) > 0)
+            if(map.get(key) != 0)
             {
                 return false;
             }
