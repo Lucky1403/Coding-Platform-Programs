@@ -15,7 +15,6 @@ class Solution {
             cost = cost + (a + b);
             pq.add(a + b);
         }
-        
         return cost;
     }
 }
