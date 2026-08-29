@@ -5,7 +5,6 @@ import java.util.List;
 
 class Solution {
     public List<List<Integer>> subsets(int[] nums) {
-        
         List<List<Integer>> list = new ArrayList<>();
         List<Integer> ans = new ArrayList<>();
         subsetFinder(ans, nums, 0, list);
