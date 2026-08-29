@@ -3,23 +3,23 @@ import java.util.List;
 
 class Solution {
     public List<String> generateParenthesis(int n) {
-        List<String> ans = new ArrayList<>();
-        generate(n, 0, 0, "", ans);
-        return ans;
+        List<String> answer = new ArrayList<>();
+        generate(n, 0, 0, "", answer);
+        return answer;
     }
 
-    private void generate(int n, int left, int right, String s, List<String> ans) {
+    private void generate(int n, int left, int right, String s, List<String> answer) {
         if(right == n)
         {
-            ans.add(s);
+            answer.add(s);
             return;
         }
         
         if(left < n){
-            generate(n, left + 1, right, s + "(", ans);
+            generate(n, left + 1, right, s + "(", answer);
         }
         if(right < left){
-            generate(n, left, right + 1, s + ")", ans);
+            generate(n, left, right + 1, s + ")", answer);
         }
     }
 }
